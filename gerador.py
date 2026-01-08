@@ -9,4 +9,4 @@ print("4- Sair do programa")
 opcao = int(input("escolhe uma opcão de 0 a 4"))
 
 if opcao == 1:
-    print("palavra passe: e8bfwH62gse7)"
+    print("palavra passe: e8bfwH62gse7")
