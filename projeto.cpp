@@ -74,6 +74,7 @@ while (!(cin >> encomenda.custoPorKg) || encomenda.custoPorKg <= 0) {
    cout << "Digita o peso do produto em kg: ";
 while (!(cin >> encomenda.pesoProduto) || encomenda.pesoProduto <= 0) {
     cout << "Peso invalido. Digita um numero maior que 0: ";
+    cin.ignore();
 
 }
 
@@ -82,6 +83,7 @@ while (!(cin >> encomenda.pesoProduto) || encomenda.pesoProduto <= 0) {
 cout << "Digita o custo por kg: ";
 while (!(cin >> encomenda.custoPorKg) || encomenda.custoPorKg <= 0) {
     cout << "Custo invalido. Digita um numero maior que 0: ";
+    cin.ignore()
 }
 
 }
@@ -207,7 +209,8 @@ if (resposta == 'n') {
 
     }
 
-    cout << "Obrigado por usar o sistema da Futaria.\n";
+    cout << "Obrigado por usar o sistema da frutaria.\n";
 
     return 0;
 }
+
