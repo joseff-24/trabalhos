@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <title>ANDRÉ VENTURA 2026 – SEGUNDA VOLTA</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(135deg, #000814 0%, #001d3d 100%);
+      color: white;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 6rem;
+      font-weight: 900;
+      letter-spacing: 10px;
+      margin: 50px 0 15px;
+      background: linear-gradient(90deg, #ff2e00, #ff6b00, #ffd000, #ff2e00);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-size: 300% 300%;
+      animation: gradientFlow 8s ease infinite;
+      text-shadow: 0 0 35px rgba(255, 80, 0, 0.7);
+    }
+
+    @keyframes gradientFlow {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .subtitle {
+      font-size: 2.4rem;
+      margin: 0 0 60px;
+      opacity: 0.92;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+    }
+
+    .photo-container {
+      width: 300px;
+      height: 300px;
+      margin: 50px auto;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 10px solid #ff2e00;
+      box-shadow: 0 0 50px rgba(255, 46, 0, 0.8), inset 0 0 40px rgba(255,255,255,0.2);
+      animation: pulse 2.8s infinite ease-in-out;
+      transition: all 0.5s;
+    }
+
+    .photo-container:hover {
+      transform: scale(1.1) rotate(3deg);
+      border-color: #ffd000;
+      box-shadow: 0 0 90px rgba(255, 208, 0, 1);
+    }
+
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50%      { transform: scale(1.05); }
+    }
+
+    .photo-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .slogan {
+      font-size: 3.8rem;
+      font-weight: bold;
+      margin: 70px 0 100px;
+      color: #ffd000;
+      text-shadow: 0 0 30px rgba(255, 208, 0, 0.9), 0 0 60px rgba(255, 46, 0, 0.6);
+      animation: flash 3.5s infinite alternate;
+    }
+
+    @keyframes flash {
+      from { opacity: 0.85; text-shadow: 0 0 30px rgba(255,208,0,0.9); }
+      to   { opacity: 1;    text-shadow: 0 0 60px rgba(255,208,0,1); }
+    }
+
+    .date {
+      font-size: 2.2rem;
+      margin: 40px 0 80px;
+      color: #ff6b00;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+
+    .flags {
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: -1;
+      overflow: hidden;
+    }
+
+    .flag {
+      position: absolute;
+      width: 140px;
+      height: 90px;
+      opacity: 0.18;
+      animation: float 28s infinite linear;
+      background: linear-gradient(to right, #006600 33%, #ff0000 33%, #ff0000 66%, #ffff00 66%);
+    }
+
+    @keyframes float {
+      0%   { transform: translate(-200px, -150px) rotate(-20deg); }
+      100% { transform: translate(150vw, 130vh) rotate(30deg); }
+    }
+
+    .flag:nth-child(odd)  { animation-duration: 34s; }
+    .flag:nth-child(even) { animation-duration: 40s; animation-delay: -12s; }
+
+    footer {
+      margin-top: 140px;
+      padding: 50px 20px;
+      font-size: 1.3rem;
+      opacity: 0.7;
+      border-top: 1px solid rgba(255,255,255,0.15);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="flags">
+    <div class="flag" style="top:5%; left:-12%;"></div>
+    <div class="flag" style="top:22%; left:-18%;"></div>
+    <div class="flag" style="top:40%; left:-8%;"></div>
+    <div class="flag" style="top:58%; left:-15%;"></div>
+    <div class="flag" style="top:75%; left:-10%;"></div>
+    <div class="flag" style="top:12%; left:-25%;"></div>
+  </div>
+
+  <div class="container">
+    <h1>ANDRÉ VENTURA</h1>
+    <div class="subtitle">Presidente da República 2026</div>
+
+    <div class="photo-container">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Andr%C3%A9_Ventura_in_2024_%28cropped%29.jpg/800px-Andr%C3%A9_Ventura_in_2024_%28cropped%29.jpg" 
+           alt="André Ventura">
+    </div>
+
+    <div class="slogan">É AGORA OU NUNCA! PORTUGAL PRIMEIRO</div>
+
+    <div class="date">2ª VOLTA • 8 DE FEVEREIRO 2026</div>
+
+    <footer>
+      Chega • O futuro começa connosco • 20 de Janeiro 2026
+    </footer>
+  </div>
+
+</body>
+</html>
